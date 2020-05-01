@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import router from './router'
 import axios from 'axios'
+import moment from 'moment'
 
 // 组件
 // 第三方组件与样式
@@ -13,6 +14,7 @@ import './assets/css/index.css'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
+Vue.prototype.$moment = moment
 
 new Vue({
   router,

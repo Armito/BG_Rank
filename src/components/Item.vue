@@ -5,7 +5,7 @@
     <van-col span="2" style="text-align: center">{{source.game_rank}}</van-col>
     <van-col span="6">
       <div style="text-align: center">
-        <img :src="source.game_thumbnail" :alt="source.game_name">
+        <img :src="source.game_img" :alt="source.game_name" style="width: 50px">
       </div>
     </van-col>
     <van-col span="12">{{source.game_name}}</van-col>
