@@ -1,4 +1,4 @@
-# bgg_rank
+# bg_rank
 
 ## Project setup
 ```
