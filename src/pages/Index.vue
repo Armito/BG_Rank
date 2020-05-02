@@ -1,5 +1,8 @@
 <template>
   <div class="index-page">
+    <keep-alive>
+      <router-view v-if="$route.meta.keeplive"></router-view>
+    </keep-alive>
     <router-view></router-view>
 
     <van-tabbar :value="active" active-color="#07c160" inactive-color="#000" @change="handleTabChange">
@@ -24,11 +27,8 @@ export default {
   },
   methods: {
     handleTabChange (active) {
-      console.log(active)
+      // console.log(active)
     }
-  },
-  beforeEnter: (to, from, next) => {
-    console.log(to, 23333333333)
   }
 }
 </script>

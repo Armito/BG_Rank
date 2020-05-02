@@ -7,6 +7,7 @@ import Home from '../pages/Home.vue'
 import Rank from '../pages/Rank.vue'
 import Search from '../pages/Search.vue'
 import My from '../pages/My.vue'
+import Detail from '../pages/Detail.vue'
 
 Vue.use(VueRouter)
 
@@ -22,7 +23,14 @@ const routes = [
       },
       {
         path: '/rank',
-        component: Rank
+        component: Rank,
+        meta: {
+          keeplive: true
+        }
+      },
+      {
+        path: '/detail/:rank',
+        component: Detail
       },
       {
         path: '/search',

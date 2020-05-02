@@ -34,6 +34,7 @@ import VirtualList from 'vue-virtual-scroll-list'
 Vue.use(Toast)
 
 export default {
+  name: 'rank',
   data () {
     return {
       itemComponent: Item,
